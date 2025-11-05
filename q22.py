@@ -1,7 +1,8 @@
-# WAPP to rotate each element of an array by one position in left side.
+#  Q:22 = WAPP to rotate all the elements of array k position to its left.
+
 '''
 Input= [1,2,3,4,5,6,7] 
-
+k=1
 Output: [2, 3, 4, 5,6,7,1]
 
 '''
@@ -16,10 +17,11 @@ class Solution:
         return nums
     def left_Rotate(self,position,nums):
         self.reverse(0,len(nums)-1,nums)
-        print(nums)
+        
         self.reverse(0,len(nums)-position-1,nums)
         self.reverse(len(nums)-position,len(nums)-1,nums)
         return nums
 ob1=Solution()
 Input= [1,2,3,4,5,6,7]
-print(ob1.left_Rotate(1,Input))
+k=int(input("Enter the kth position for rotation: "))
+print(ob1.left_Rotate(k,Input))
