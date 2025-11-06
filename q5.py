@@ -1,6 +1,7 @@
 # AJP for below requirements:
 # Original Array=[2,5,4,3,6]
 # Resultant Array=[360,144,180,240,120]
+
 class Solution:
     def final(self,nums):
         arr=[]

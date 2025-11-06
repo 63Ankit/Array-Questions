@@ -20,7 +20,15 @@ class Solution:
             start+=1
         return nums
         '''
-        
+        i=0
+        for j in range(len(nums)-1,-1,-1):
+            if nums[j]!=0:
+                nums[i]=nums[j]
+                if i!=j:
+                    nums[j]=0
+                i-=1
+        return nums
+  
 ob1=Solution()
 Input=[0, 1, 1, 0, 0, 1, 0, 0]
 print(ob1.Swift_zero_left_side(Input))

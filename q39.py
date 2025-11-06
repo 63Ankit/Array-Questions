@@ -1,0 +1,1 @@
+#  WAJP to print all  the prime numbers up to n by using Sieve of Eratosthenes mechanism.
