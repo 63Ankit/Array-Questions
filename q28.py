@@ -17,11 +17,7 @@ class Solution:
                 i+=1
 
         return nums
-        
-
-
-
-
+    
 ob1=Solution()
 nums=[7, 0, 2, 6, 0, 4]
 print(ob1.Swift_Zero_at_end(nums))
